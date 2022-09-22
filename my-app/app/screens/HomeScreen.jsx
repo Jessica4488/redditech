@@ -1,7 +1,12 @@
 import React from 'react';
+import { useState,useEffect } from 'react';
 import { Alert, Button, ImageBackground, StyleSheet, View } from 'react-native';
 
 function HomeScreen(props) {
+  const [isLoading, setLoading] = useState(true);
+  const [data, setData] = useState([]);
+  console.log(data);
+
     return (
         <>
             <ImageBackground
